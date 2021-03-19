@@ -1,4 +1,4 @@
-const CACHE_VERSION = 2
+const CACHE_VERSION = 3
 const CACHE_ASSETS = [
   'css/csshake-slow.min.css',
   'css/icofont.min.css',
