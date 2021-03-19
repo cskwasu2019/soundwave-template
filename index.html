@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundWave Template</title>
+
+    <base href="/soundwave-template/" />
+    <link rel="icon" href="images/icon.png" type="image/png" />
+    <link href="images/icon-192x192.png" rel="icon" sizes="192x192" />
+    <link href="images/icon-192x192.png" rel="apple-touch-icon" />
+
+    <meta name="theme-color" content="#2f3038" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Left due to simplicity, should be bundled using as asset bunlder -->
+    <link rel="stylesheet" href="css/sal.css" />
+    <link rel="stylesheet" href="css/csshake-slow.min.css" />
+    <link rel="stylesheet" href="css/icofont.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/svg.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <script src="js/sal.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <section id="first-page">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <circle></circle>
+          <circle></circle>
+        </svg>
+
+        <header class="brand">
+          <a href="/">
+            <h1>
+              <img src="images/sound-wave.png" alt="Logo Image" />
+              Sound Wave
+            </h1>
+          </a>
+          <nav class="offset-right">
+            <ul>
+              <li><a href="#discover-page">Discover</a></li>
+              <li><a href="#join-page">Join</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div
+            id="model-image-container"
+            class="hide-on-mobile-and-tablet"
+            data-sal="fade"
+            data-sal-duration="2000"
+          >
+            <img src="images/image-2-transparent.png" alt="Model" />
+          </div>
+          <div id="call-to-action" data-sal="slide-up" data-sal-duration="1200">
+            <h2 class="shake-slow shake-constant">Feel The Music</h2>
+            <p>Stream over 20 Thousand of song with one click</p>
+            <button class="btn">Join Now</button>
+          </div>
+          <i class="icofont-magic-mouse scroll-icon"></i>
+        </main>
+      </section>
+      <section id="discover-page">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="svg-gradient-0">
+              <stop
+                offset="0"
+                style="stop-color: rgba(69, 67, 191, 0.35)"
+              ></stop>
+              <stop offset="1" style="stop-color: rgba(182, 35, 105, 0)"></stop>
+            </linearGradient>
+          </defs>
+          <circle></circle>
+          <circle></circle>
+          <circle></circle>
+          <circle></circle>
+          <circle></circle>
+          <circle></circle>
+        </svg>
+        <main>
+          <div id="our-features" data-sal="slide-down" data-sal-duration="2000">
+            <h2>Discover New Music</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="icofont-radio-mic icofont-2x"></i>
+                  Chart
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icofont-music-disk icofont-2x"></i>
+                  Albums
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icofont-headphone-alt-1 icofont-2x"></i>
+                  Local Music
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icofont-location-arrow icofont-2x"></i>
+                  More
+                </a>
+              </li>
+            </ul>
+            <p>
+              By joining you to can benefits by listening to the latest albums
+              released
+            </p>
+          </div>
+
+          <div id="our-products" data-sal="zoom-in" data-sal-duration="1000">
+            <div class="image-container">
+              <img src="images/product-1.png" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="images/product-2.png" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="images/product-3.png" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="images/product-4.png" alt="" />
+            </div>
+          </div>
+        </main>
+        <footer class="brand hide-on-mobile-and-tablet hidden">
+          <h1>
+            <img src="images/sound-wave.png" alt="Logo Image" />
+            Sound Wave
+          </h1>
+        </footer>
+      </section>
+      <section id="join-page">
+        <header class="brand hide-on-mobile-and-tablet hidden">
+          <h1>
+            <img src="images/sound-wave.png" alt="Logo Image" />
+            Sound Wave
+          </h1>
+        </header>
+        <main>
+          <div
+            id="brag-container"
+            data-sal="flip-right"
+            data-sal-duration="1000"
+          >
+            <h3 data-reflect-text="Just the" class="text-reflect"></h3>
+            <h3 data-reflect-text="Fun" class="text-reflect"></h3>
+          </div>
+          <div id="login-form">
+            <div id="login-form-container">
+              <div
+                class="form-content"
+                data-sal="flip-left"
+                data-sal-duration="1000"
+              >
+                <form action="#" method="get">
+                  <div class="form-input">
+                    <label for="input-name">Name</label>
+                    <input type="text" name="name" id="imput-name" />
+                  </div>
+
+                  <div class="form-input">
+                    <label for="input-password">Password</label>
+                    <input type="text" name="password" id="input-password" />
+                  </div>
+
+                  <div class="form-input">
+                    <label for="input-email">Email</label>
+                    <input type="text" name="email" id="input-email" />
+                  </div>
+
+                  <button class="btn block">Join Now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <nav id="pages-links">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <nav id="social-links">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="icon icofont-facebook"></i
+                  ><span class="hide-on-mobile-and-tablet">Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="icon icofont-twitter"></i
+                  ><span class="hide-on-mobile-and-tablet">Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="icon icofont-instagram"></i
+                  ><span class="hide-on-mobile-and-tablet">Facebook</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    </div>
+
+    <script>
+      sal()
+
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register(`${document.baseURI}serviceWorker.js`)
+      }
+    </script>
+  </body>
+</html>

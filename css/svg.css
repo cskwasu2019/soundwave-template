@@ -1,0 +1,65 @@
+svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+#first-page svg circle:nth-of-type(1) {
+  cx: 5rem;
+  cy: 15rem;
+  r: 5rem;
+  fill: rgba(36, 95, 150, 0.28);
+}
+
+#first-page svg circle:nth-of-type(2) {
+  r: 15rem;
+  cx: calc(100% - 10rem);
+  cy: calc(100vh - 10rem);
+  fill: rgba(160, 37, 96, 0.18);
+}
+
+#discover-page svg circle:nth-of-type(1) {
+  r: 8.5rem;
+  cx: 9rem;
+  cy: 6rem;
+  fill: url(#svg-gradient-0);
+}
+
+#discover-page svg circle:nth-of-type(2) {
+  r: 8.5rem;
+  cx: calc(100% - 6rem);
+  cy: calc(100vh - 4rem);
+  fill: url(#svg-gradient-0);
+}
+
+#discover-page svg circle:nth-of-type(3) {
+  r: 4rem;
+  cx: calc(100% - 5rem);
+  cy: 60vh;
+  fill: rgba(166, 41, 116, 0.16);
+}
+
+#discover-page svg circle:nth-of-type(4) {
+  r: 6rem;
+  cx: calc(50% + 10rem);
+  cy: 60vh;
+  fill: rgba(67, 130, 225, 0.14);
+}
+
+#discover-page svg circle:nth-of-type(5) {
+  r: 6rem;
+  cx: 4rem;
+  cy: calc(100vh - 4rem);
+  fill: rgba(67, 130, 225, 0.14);
+}
+
+#discover-page svg circle:nth-of-type(6) {
+  r: 4rem;
+  cx: 15rem;
+  cy: calc(100vh - 10rem);
+  fill: rgba(166, 41, 116, 0.16);
+}

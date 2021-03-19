@@ -1,0 +1,376 @@
+:root {
+  --primary-font-color: #ffffff;
+  --background-color: #2f3038;
+  --body-background-color: #1b1c20;
+  --call-to-action-btn-color: #146490;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--body-background-color);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.brand {
+  color: var(--primary-font-color);
+  padding: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.brand img {
+  height: 2.5rem;
+  margin-right: 0.8rem;
+}
+
+.brand h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem 0;
+}
+
+section:first-child {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100vh;
+}
+
+section:last-child {
+  padding-bottom: 0;
+}
+
+section main {
+  flex: 1;
+  position: relative;
+}
+
+#first-page nav li {
+  position: relative;
+}
+
+#first-page nav li::after {
+  content: '';
+  display: block;
+  height: 0.1rem;
+  width: 0;
+  background: var(--primary-font-color);
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-top: 0.2rem;
+  transition: width ease-in-out 0.2s;
+}
+
+#first-page nav li:hover:after {
+  width: 70%;
+}
+
+#model-image-container {
+  position: relative;
+}
+
+#model-image-container img {
+  max-height: 80vh;
+}
+
+#call-to-action {
+  width: 100%;
+  height: 100%;
+  padding: 12rem 2rem 0;
+  color: var(--primary-font-color);
+  font-size: 1.6rem;
+}
+
+#call-to-action > * {
+  z-index: inherit;
+}
+
+#call-to-action h2 {
+  font-size: 3.2rem;
+  animation-delay: 1s;
+}
+
+#call-to-action p {
+  padding: 1.5rem 0;
+}
+
+#call-to-action button {
+  background: var(--call-to-action-btn-color);
+  color: var(--primary-font-color);
+}
+
+#discover-page main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#our-features {
+  color: var(--primary-font-color);
+  padding: 0 20px;
+}
+
+#our-features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+#our-features p {
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+#our-features ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#our-features li {
+  display: block;
+  color: var(--primary-font-color);
+  background: #282829;
+  text-align: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+#our-features li i {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#our-products {
+  width: 100%;
+  position: relative;
+  display: grid;
+  padding: 0 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 700px;
+  margin: 20px auto 0;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform ease-in-out 0.2s;
+}
+
+.image-container:hover {
+  z-index: 10;
+}
+
+.image-container:hover img {
+  transform: scale(1.1) rotateZ(-2deg);
+  box-shadow: 0 0 5px white;
+}
+
+#join-page main {
+  display: flex;
+}
+
+#join-page footer {
+  background: #202027;
+  color: var(--primary-font-color);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#join-page #social-links {
+  margin-left: auto;
+}
+
+#social-links ul {
+  gap: 0.2rem;
+  font-size: 0.8rem;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  margin: auto;
+}
+
+#login-form-container {
+  color: var(--primary-font-color);
+  background: #202027;
+  padding: 4rem 2rem;
+  margin-bottom: 4rem;
+}
+
+#login-form-container .form-content {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#login-form-container button {
+  background: #146490;
+  color: var(--primary-font-color);
+  font-weight: bold;
+}
+
+#brag-container {
+  font-size: 4rem;
+  color: var(--primary-font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#brag-container h3:last-child {
+  font-size: 5.5rem;
+  color: #a91491;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.icon {
+  background: var(--primary-font-color);
+  padding: 0.5rem;
+  color: #202027;
+  border-radius: 0.2rem;
+  display: inline-block;
+}
+
+.scroll-icon {
+  font-size: 1.5rem;
+  display: inline-block;
+  position: absolute;
+  bottom: 10rem;
+  color: var(--primary-font-color);
+  border: 1px solid var(--primary-font-color);
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-weight: bold;
+  left: calc(50% - 0.525rem);
+  text-align: center;
+  animation: anim-scroll-icon 1s ease-in-out infinite alternate;
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.form-input {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.form-input label {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.form-input input {
+  display: block;
+  color: var(--primary-font-color);
+  outline: none;
+  width: 100%;
+  background: none;
+  border: 1px solid #1762a7;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.hide-on-mobile-and-tablet {
+  display: none;
+}
+
+.image-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  background: var(--background-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.text-reflect {
+  display: block;
+  position: relative;
+}
+
+.text-reflect::before {
+  content: attr(data-reflect-text);
+  display: block;
+  text-shadow: black 0.5rem 0 0.5rem;
+}
+
+.text-reflect::after {
+  content: attr(data-reflect-text);
+  display: block;
+  position: relative;
+  top: -2rem;
+  transform: scaleY(-1);
+  opacity: 0.2;
+}
+
+@keyframes anim-scroll-icon {
+  to {
+    bottom: 6.5rem;
+  }
+}
