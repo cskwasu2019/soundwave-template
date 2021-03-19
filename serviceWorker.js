@@ -1,4 +1,4 @@
-const CACHE_VERSION = 1
+const CACHE_VERSION = 2
 const CACHE_ASSETS = [
   'css/csshake-slow.min.css',
   'css/icofont.min.css',
@@ -27,18 +27,19 @@ const CACHE_ASSETS = [
   'js/sal.js',
   'index.html',
   'manifest.json',
-  '/',
 ]
+const ROOT = '/soundwave-template/'
 
 const cacheName = () => `cache_v${CACHE_VERSION}`
 
 addEventListener('install', (event) => {
-  const assets = CACHE_ASSETS.map(
-    (asset) => new URL(asset, registration.scope).href
-  )
+  const assets = [ROOT, ...CACHE_ASSETS.map((asset) => ROOT + asset)]
 
   event.waitUntil(
-    caches.open(cacheName()).then((cache) => cache.addAll(assets))
+    caches
+      .open(cacheName())
+      .then((cache) => cache.addAll(assets))
+      .then(() => self.skipWaiting())
   )
 })
 
@@ -53,7 +54,6 @@ addEventListener('activate', (event) =>
           )
         )
       )
-      .then(() => self.skipWaiting())
   )
 )
 
@@ -64,7 +64,6 @@ addEventListener('fetch', async (event) =>
         if (cachedResponse) {
           return cachedResponse
         } else {
-          // console.log('Fetching Request...', event)
           return fetch(event.request)
         }
       })
